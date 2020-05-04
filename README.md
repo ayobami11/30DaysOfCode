@@ -1,3 +1,3 @@
 # 30DaysOfCode
 
- https://ayobami11.github.io/30DaysOfCode/
+ https://github.com/ayobami11/30DaysOfCode/tree/master/day3
