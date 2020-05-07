@@ -157,6 +157,8 @@ footer {
     width: 15%;
 }
 
+/* Media query for smartphones */
+
 @media only screen and (max-width: 800px) {
     #header-links {
         top: -40px;
@@ -205,11 +207,5 @@ footer {
         margin-right: 5px;
         padding: 10px 0;
         width: 33%;
-    }
-}
-
-@media only screeen and (max-width: 480px) {
-     .special {
-        display: none;
     }
 }
