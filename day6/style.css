@@ -108,6 +108,7 @@ button:hover {
 
 footer {
     font-size: 1.4rem;
+    min-width: 400px;
 }
 
 #location {
