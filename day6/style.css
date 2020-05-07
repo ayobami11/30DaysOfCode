@@ -201,13 +201,15 @@ footer {
         padding: 10px 5px;
     }
 
-    .special {
-        display: none;
-    }
-    
     #footer-right {
         margin-right: 5px;
         padding: 10px 0;
         width: 33%;
+    }
+}
+
+@media only screeen and (max-width: 480px) {
+     .special {
+        display: none;
     }
 }
