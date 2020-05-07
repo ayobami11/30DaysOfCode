@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(236, 233, 190);
+}
+
+figure {
+    margin: 25px auto;
+    text-align: center;
+    width: 70%;
+}
+
+#images {
+    text-align: center;
+}
+
+#btn-section {
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(124, 116, 116);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: Calibri, sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Transition effects */
+
+.transitions {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: all 1.5s ease-out;
+}
+
+.transitions:hover {
+    border-radius: 10px;
+    opacity: 1;
+    transform: scale(0.8);
+    transition: all 1.5s ease-in;
+}
+
+/* Media query for different screen sizes */
+
+@media only screen and (max-width: 500px) {
+    #images {
+        height: 60%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #images {
+        height: 65%;
+        width: 85%;
+    }
+}
