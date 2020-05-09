@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Header section */
+
+header {
+    background-color: rgb(61, 27, 27);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#title {
+    font-size: 2.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+#navigation-links ul {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+a {
+    color: rgb(90, 214, 58);
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Main section */
+
+main {
+    margin-top: 90px;
+}
+
+h2 {
+    text-align: center;
+}
+
+figure {
+    padding: 10px;;
+}
+
+img {
+    border-radius: 5px;
+}
+
+figcaption {
+    color: rgb(188, 252, 77);
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.meal-section {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.meal-type {
+    font-size: 2.2rem;
+    grid-area: 1 / 1 / span 1 / span 3;
+    padding: 15px;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+}
+
+#locations {
+    background-image: url('./images/bg-location.jpg');
+    background-size: cover;
+    color: rgb(43, 255, 131);
+    font-size: 1.9rem;
+    margin: 15px auto;
+    padding: 50px;
+    width: 85%;
+}
+
+#location-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.location {
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 245, 238, 0.651);
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    line-height: 2;
+    margin-top: 5px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Footer section */
+
+footer {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+address {
+    line-height: 1.9;
+    text-align: center;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 500px) {
+    .location {
+        font-size: 1.2rem;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .meals {
+        display: block;
+    }
+
+    #locations {
+        padding: 20px;
+    }
+
+    .location {
+        font-size: 1.3rem;
+        margin: 10px;
+        padding: 12px;
+    }
+}
