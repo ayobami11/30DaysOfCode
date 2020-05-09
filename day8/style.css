@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* For the parallax effect to work, the height of the parent containers must be set to 100% */
+html,
+body,
+main {
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+h1 {
+    background-color: rgb(0, 32, 35);
+    border-bottom: 2px solid rgb(245, 222, 179);
+    color: rgb(105, 160, 173);
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.images {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#web {
+    background-image: url('./images/img_4.jpg');
+    height: 100%;
+}
+
+#html {
+    background-image: url('./images/img_5.jpg');
+    height: 50%;
+}
+
+#css {
+    background-image: url('./images/img_7.jpg');
+    height: 50%;
+}
+
+#javascript {
+    background-image: url('./images/img_10.jpg');
+    height: 50%;
+}
+
+#bottom {
+    background-image: url('./images/img_8.jpg');
+    height: 50%;
+}
+
+section {
+    background-color: rgb(0, 32, 35);
+    border: 1.5px solid rgb(214, 153, 135);
+    margin: 0 auto;
+    padding: 50px;
+    text-align: justify;
+    width: 100%;
+}
+
+h2 {
+    color: rgb(105, 160, 173);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: rgb(207, 126, 93);
+}
+
+.header {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
+.align {
+    margin: 0 auto;
+    width: 30%;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    section {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .align {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .align {
+        width: 80%;
+    }
+}
