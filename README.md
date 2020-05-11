@@ -12,3 +12,8 @@ Day 8: https://ayobami11.github.io/30DaysOfCode/day8/
 Day 9: https://ayobami11.github.io/30DaysOfCode/day9/
 
 Day 10: https://ayobami11.github.io/30DaysOfCode/day10/
+
+<!-- Both CSS Flex and Grid webpage folders are contained in the day11 folder for better organization -->
+Day 11 Flexbox: https://ayobami11.github.io/30DaysOfCode/day11/css-flexbox
+
+Day 11 Grid: https://ayobami11.github.io/30DaysOfCode/day11/css-grid
