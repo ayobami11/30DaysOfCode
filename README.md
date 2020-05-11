@@ -10,3 +10,5 @@ Day 7: https://ayobami11.github.io/30DaysOfCode/day7/
 Day 8: https://ayobami11.github.io/30DaysOfCode/day8/
 
 Day 9: https://ayobami11.github.io/30DaysOfCode/day9/
+
+Day 10: https://ayobami11.github.io/30DaysOfCode/day10/
