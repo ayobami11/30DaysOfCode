@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(111, 117, 114);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Header */
+
+#title {
+    background-color: rgb(233, 137, 120);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 7px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Main section */
+
+main {
+    margin-top: 60px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+/* Image gallery */
+
+#images {
+    border: 3px solid rgb(53, 22, 22);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 5px auto;
+    width: 95%;
+}
+
+figure {
+    border: 2px dashed black;
+    border-radius: 8px;
+    margin: 25px 0;
+    padding: 20px;
+}
+
+img {
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: all 1s ease-out;
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 1s ease-in;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 1415px) {
+    #images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    #images {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(244, 164, 96);
+    color: rgb(70, 43, 43);
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+#title {
+    background-color: rgb(255, 228, 196);
+    border-bottom: 2px solid rgb(139, 69, 19);
+    padding: 5px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Main section */
+
+main {
+    margin-top: 55px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Image gallery */
+
+#images {
+    border: 2px solid rgb(207, 129, 25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px auto;
+    width: 90%;
+}
+
+figure {
+    margin: 20px;
+}
+
+img {
+    border: 2px solid rgb(255, 202, 202);
+    border-radius: 8px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
