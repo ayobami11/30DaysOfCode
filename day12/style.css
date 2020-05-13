@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 700px;
+}
+
+/* Header section */
+
+header {
+    background-color: rgb(39, 36, 36);
+    border-bottom: 2px solid rgb(139, 69, 19);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+figcaption {
+    display: inline;
+    position: relative;
+    top: -17px;
+}
+
+#header-links {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+/* Main section */
+
+a {
+    color: rgb(121, 112, 112);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 50px;
+}
+
+#intro {
+    background-color: rgb(54, 44, 44);
+    display: flex;
+}
+
+#features {
+    background-color: rgb(235, 228, 228);
+}
+
+#reviews {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.side-text {
+    margin: 0 auto;
+    padding: 20px;
+    width: 30%;
+}
+
+.side-text p {
+    color: rgb(94, 92, 92);
+}
+
+
+.review {
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    width: 45%;
+}
+
+.reviewer {
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#subscriptions {
+    background-image: linear-gradient(180deg, rgb(35, 35, 228), rgb(36, 36, 70));
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    line-height: 2.3;
+    margin: 40px auto;
+    padding: 60px 20px;
+    text-align: center;
+    width: 70%;
+}
+
+#subscriptions div {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#subscriptions h2 {
+    margin: 10px;
+}
+
+#input-field {
+    display: flex;
+    flex-grow: 2;
+    padding: 2px;
+    text-align: center;
+}
+
+#input-field input {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 80%;
+}
+
+#input-field input:focus {
+    outline: none;
+}
+
+#input-field button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+/* Footer section */
+
+footer {
+    margin: 5px;
+    text-align: center;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 700px) {
+    .flex-container {
+        overflow: hidden;
+    }
+
+    .iphone {
+        margin: 0;
+        padding: 0;
+        transform: scale(0.3);
+    }
+    
+    .side-text {
+        font-size: 1rem;
+        margin: 0;
+        padding: 5px;
+    }
+}
