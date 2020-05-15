@@ -19,3 +19,6 @@ Day 11 Flexbox: https://ayobami11.github.io/30DaysOfCode/day11/css-flexbox
 Day 11 Grid: https://ayobami11.github.io/30DaysOfCode/day11/css-grid
 
 Day 12: https://ayobami11.github.io/30DaysOfCode/day12/
+
+Day 15: https://ayobami11.github.io/30DaysOfCode/day15/
+
