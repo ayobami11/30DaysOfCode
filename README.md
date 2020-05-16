@@ -22,3 +22,6 @@ Day 12: https://ayobami11.github.io/30DaysOfCode/day12/
 
 Day 15: https://ayobami11.github.io/30DaysOfCode/day15/
 
+Day 16: https://ayobami11.github.io/30DaysOfCode/day16/
+
+
