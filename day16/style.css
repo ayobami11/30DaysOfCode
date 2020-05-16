@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(129, 129, 92);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1 {
+    background-color: rgb(61, 27, 27);
+    border-bottom: 2px solid rgb(250, 104, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+/* Modal box section */
+
+#modal-box {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+header {
+    background-color: rgb(42, 40, 46);
+    border-bottom: 2px solid rgb(139, 69, 19);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+#flex-container {
+    background-color: rgb(46, 23, 23);
+    display: flex;
+}
+
+figure {
+    width: 53%;
+}
+
+img {
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.7;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
+#subscribe-btn {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: 40%;
+}
+
+button:hover, 
+#subscribe-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 1420px) {
+    #modal-box {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #modal-box {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    form {
+        margin: 20px;
+        text-align: left;
+        width: 50%;
+    }
+
+    #subscribe-btn {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    form, 
+    #subscribe-btn {
+        font-size: 0.8rem;
+    }
+}

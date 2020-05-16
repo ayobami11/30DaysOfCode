@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <title>Unmashed | Food Like No Other</title>
+    </head>
+    <body>
+        <h1>Unmashed</h1>
+        <button id="modal-btn">Click Me!</button>
+        <!-- Modal box -->
+        <section id="modal-box">
+            <header>
+                <!-- Close button -->
+                <span id="close-btn">&times;</span>
+            </header>
+            <div id="flex-container">
+                <!-- Side image -->
+                <figure>
+                    <img src="./images/mediterranean-salad.jpg" alt="">
+                </figure>
+                <!-- Main content of modal box -->
+                <form>
+                    <p>New to Unmashed?</p>
+                    <p class="italic">Sign up today to get more info about our delicacies and make reservations.</p>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="unmashed@food.com">
+                    </div>
+                    <br>
+
+                    <input id="subscribe-btn" type="button" value="Subscribe">
+                </form>
+            </div>
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
