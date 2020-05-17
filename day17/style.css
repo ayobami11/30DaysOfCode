@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(133, 133, 86);
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+#body-text {
+    margin: 10px;
+}
+
+/* Button section */
+
+div {
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 10px 0;
+    width: 40%;
+}
+
+#color-btn {
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 20px;
+    outline: none;
+    padding: 10px;
+}
+
+.color {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 1rem;
+    }
+
+    div {
+        width: 60%;
+    }
+
+    #color-btn {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    div {
+        width: 85%;
+    }
+}
