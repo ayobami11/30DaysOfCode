@@ -26,3 +26,6 @@ Day 16: https://ayobami11.github.io/30DaysOfCode/day16/
 
 Day 17: https://ayobami11.github.io/30DaysOfCode/day17/
 
+Day 20: https://ayobami11.github.io/30DaysOfCode/day20/
+
+
