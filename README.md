@@ -32,4 +32,4 @@ Day 18: https://ayobami11.github.io/30DaysOfCode/day18/
 
 Day 20: https://ayobami11.github.io/30DaysOfCode/day20/
 
-
+Day 22: https://ayobami11.github.io/30DaysOfCode/day22/
