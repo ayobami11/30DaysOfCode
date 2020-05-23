@@ -3,6 +3,8 @@ Day 3: https://ayobami11.github.io/30DaysOfCode/day3/
 
 Day 4: https://ayobami11.github.io/30DaysOfCode/day4/
 
+Day 5: https://ayobami11.github.io/30DaysOfCode/day5/
+
 Day 6: https://ayobami11.github.io/30DaysOfCode/day-6/
 
 Day 7: https://ayobami11.github.io/30DaysOfCode/day7/
@@ -25,6 +27,8 @@ Day 15: https://ayobami11.github.io/30DaysOfCode/day15/
 Day 16: https://ayobami11.github.io/30DaysOfCode/day16/
 
 Day 17: https://ayobami11.github.io/30DaysOfCode/day17/
+
+Day 18: https://ayobami11.github.io/30DaysOfCode/day18/
 
 Day 20: https://ayobami11.github.io/30DaysOfCode/day20/
 
