@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <header class="flex">
+            <h1>Simple Calculator</h1>
+        </header>
+        <main>
+            <!-- Flex-container -->
+            <form id="calculator">
+                <!-- Grid container -->
+                <div>
+                    <span id="display-container"><input id="display" type="text" disabled></span>
+                    <span><input id="clear" class="buttons" type="button" name="clear" value="C"></span>
+                    <span><input id="seven" class="buttons" type="button" name="seven" value="7"></span>
+                    <span><input id="eight" class="buttons" type="button" name="eight" value="8"></span>
+                    <span><input id="nine" class="buttons" type="button" name="nine" value="9"></span>
+                    <span><input id="add" class="buttons operator" type="button" name="plus" value="&plus;"></span>
+                    <span><input id="four" class="buttons" type="button" name="four" value="4"></span>
+                    <span><input id="five" class="buttons" type="button" name="five" value="5"></span>
+                    <span><input id="six" class="buttons" type="button" name="six" value="6"></span>
+                    <span><input id="subtract" class="buttons operator" type="button" name="minus" value="&minus;"></span>
+                    <span><input id="one" class="buttons" type="button" name="one" value="1"></span>
+                    <span><input id="two" class="buttons" type="button" name="two" value="2"></span>
+                    <span><input id="three" class="buttons" type="button" name="three" value="3"></span>
+                    <span><input id="multiply" class="buttons operator" type="button" name="times" value="&times;"></span>
+                    <span><input id="zero" class="buttons" type="button" name="zero" value="0"></span>
+                    <span><input id="point" class="buttons" type="button" name="point" value="."></span>
+                    <span><input id="equals" class="buttons operator" type="button" name="equals" value="&equals;"></span>
+                    <span><input id="divide" class="buttons operator" type="button" name="divide" value="&divide;"></span>
+                </div>
+            </form>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
