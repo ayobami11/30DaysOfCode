@@ -1,0 +1,317 @@
+/* General styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(210, 5%, 40%);
+}
+
+header {
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 0.85em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    margin-top: -3.6em;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: hsl(216, 3%, 30%);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: hsl(210, 5%, 40%);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+button {
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: none;
+    border-radius: 30px;
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+    outline: none;
+    padding: 0.8em 1.3em;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-top: 0.8em;
+}
+
+footer {
+    background-color: hsl(233, 26%, 24%);
+    padding: 1em 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Specific styles */
+
+/* Menu-bar */
+#menu-bar {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.4em auto;
+    width: 80%;
+}
+
+#menu-bar nav {
+    align-items: center;
+    width: 40%;
+}
+
+#menu-bar ul {
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menu-bar a {
+    padding-bottom: 0.85em;
+}
+
+#menu-bar a:active {
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+}
+
+/* Hamburger section */
+#hamburger {
+    display: none;
+}
+
+#hamburger-section {
+    display: none;
+    flex-basis: 100%;
+    text-align: center;
+    height: 50vh;
+}
+
+#hamburger-section ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#hamburger-section a:active {
+    border: none;
+}
+
+/* Introduction */
+#intro {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#intro-text {
+    width: 23%;
+}
+
+#phones-container {
+    background-image: url('./images/bg-intro-desktop.svg');
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 62%;
+}
+
+#intro figure {
+    width: 70%;
+}
+
+#intro button {
+    margin: 1.5em 0;
+}
+
+/* Features section */
+#features-section {
+    background-color: hsl(220, 16%, 96%);
+    padding: 4em 0;
+}
+
+#features-parent {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#features-parent h3 {
+    margin-bottom: 0.7em;
+}
+
+#features {
+    justify-content: space-between;
+    margin-top: 2.3em;
+}
+
+#features h4 {
+    margin: 1em 0;
+}
+
+.feature {
+    width: 24%;
+}
+
+/* Articles */
+#articles {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 3em 0;
+    width: 80%;
+}
+
+#articles h3 {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#articles a:active {
+    color: hsl(136, 65%, 51%);
+}
+
+#articles img {
+    border-radius: 3px;
+    width: 100%;
+}
+
+.article-text {
+    padding: 1em 0.8em;
+}
+
+.article {
+    background-color: hsl(0, 0%, 100%);
+    width: 24%;
+}
+
+/* Footer section */
+#footer-section {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1.2em 0;
+    width: 80%;
+}
+
+#footer-section a {
+    color: hsl(0, 0%, 98%);
+}
+
+#footer-section a:active {
+    color:hsl(136, 65%, 51%);
+}
+
+path:active {
+    fill: hsl(136, 65%, 51%);
+}
+
+#social-media {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#social-media figure {
+    justify-content: space-between;
+}
+
+#copyright-section {
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-links li {
+    padding: 0.2em;
+}
+
+.attribution p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 700px) {
+    /* Header section */
+    #top-nav,
+    header button {
+        display: none;
+    }
+
+    #hamburger-section a {
+        font-size: 1.5rem;
+    }
+
+    #hamburger {
+        cursor: pointer;
+        display: block;
+    }
+
+    /* Introduction */
+    #intro {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #intro-text {
+        margin-top: 7em;
+    }
+
+    #phones-container {
+        display: none;
+    }
+
+   /* Footer section */
+    #footer-section {
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    #copyright-section {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #copyright-section button {
+        margin: 0.3em auto;
+    }
+    
+    /* Classes */
+    .flex-item {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
