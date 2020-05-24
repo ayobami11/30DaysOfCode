@@ -1,0 +1,398 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    color: hsl(210, 5%, 40%);
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+header {
+    background-color: hsl(0, 0%, 98%);
+    border-bottom: 1.5px solid hsl(210, 5%, 40%);
+    padding: 2em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: hsl(210, 5%, 40%);
+    text-decoration: none;
+}
+
+a:active {
+    color: hsla(210, 5%, 40%, 0.7);
+}
+
+h2,
+h3,
+h4 {
+    color: hsl(216, 3%, 30%);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+button {
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 0.8em 1.3em;
+}
+
+button:active {
+    background-color: hsl(12, 88%, 59%, 0.8);
+}
+
+figcaption {
+    color: hsl(233, 12%, 13%);
+    font-weight: 700;
+}
+
+footer {
+    background-color: hsl(233, 12%, 13%);
+    padding-bottom: 0.5em;
+}
+
+/* Classes */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Menu-bar */
+#menu-bar {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#menu-bar nav {
+    align-items: center;
+    min-width: 350px;
+    margin: 0 1em;
+    width: 40%;
+}
+
+#menu-bar ul {
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menu-bar button {
+    min-width: 120px;
+}
+
+/* Hamburger section */
+#hamburger {
+    display: none;
+}
+
+#hamburger-section {
+    border: 1px solid red;
+    background-color: hsl(14, 100%, 65%);
+    border-radius: 5px;
+    display: none;
+    margin: 0 auto;
+    margin-top: 7em;
+    padding: 2em 0;
+    text-align: center;
+    width: 90%;
+}
+
+#hamburger-section a {
+    color: hsl(0, 0%, 100%);
+}
+
+#hamburger-section li {
+    font-weight: 700;
+    margin: 1.5em 0;
+}
+
+/* Introduction */
+#intro {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 6em;
+    width: 80%;
+}
+
+#intro-text {
+    width: 25%;
+}
+
+#intro-text p {
+    margin: 1em 0;
+}
+
+#intro-text button {
+    margin: 2em 0;
+}
+
+#intro figure {
+    width: 70%;
+}
+
+#intro img {
+    width: 100%;
+}
+
+/* Features section */
+#features-parent {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#features-intro {
+    width: 35%;
+}
+
+#features {
+    flex-direction: column;
+    width: 50%;
+}
+
+.feature {
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.feature div {
+    margin-bottom: 1.5em;
+    width: 92%;
+}
+
+.number {
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    padding: 0.1em 0.7em;
+}
+
+/* Testimonials section */
+#testimonials-section {
+    margin-bottom: 6em;
+}
+
+#testimonials-section h3 {
+    text-align: center;
+}
+
+#testimonials {
+    justify-content: space-between;
+    margin: 1.5em 0;
+}
+
+#testimonials + div {
+    padding: 0.8em;
+    text-align: center;
+}
+
+#testimonials figure {
+    width: 95%;
+}
+
+#testimonials img {
+    width: 100%;
+}
+
+.testimonial {
+    background-color: hsl(0, 0%, 98%);
+    margin: 0 0.5em;
+    padding: 2em;
+    text-align: center;
+    width: 23%;
+}
+
+/* Bottom section */
+#bottom {
+    background-color: hsl(12, 88%, 59%);
+    background-image: url('./images/bg-tablet-pattern.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    padding: 2em;
+}
+
+#bottom div {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#bottom p {
+    color: hsl(0, 1%, 51%);
+    font-size: 2rem;
+    width: 30%;
+}
+
+#bottom button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(12, 88%, 59%);
+    margin: 0 auto;
+    max-width: 120px;
+}
+
+#bottom button:active {
+    color: hsla(12, 88%, 59%, 0.7);
+}
+
+/* Footer section */
+#footer-section {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 80%;
+}
+
+#footer-section a {
+    color: hsl(0, 0%, 98%);
+}
+
+#footer-section a:active,
+path:active {
+    color: hsl(12, 88%, 59%);
+}
+
+path:active {
+    fill: hsl(12, 88%, 59%);
+}
+
+#social-media {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#social-media figure {
+    justify-content: space-between;
+}
+
+#copyright-section {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#copyright-section button {
+    padding: 0.7em 1.3em;
+}
+
+#footer-section form {
+    justify-content: space-between;
+}
+
+#footer-section input {
+    border: 1px solid hsl(12, 88%, 59%);
+    border-radius: 30px;
+    color: hsl(12, 88%, 59%);
+    outline: none;
+    padding: 0.5em;
+}
+
+#result {
+    color: hsl(12, 88%, 59%);
+    font-style: italic;
+}
+
+.footer-links li {
+    padding: 0.2em;
+}
+
+.attribution p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    /* General styles */
+    body {
+        background-image: url('./images/bg-simplify-section-mobile.svg');
+    }
+
+    /* Menu bar */
+    #menu-bar nav,
+    #menu-bar button {
+        display: none;
+    }
+
+    /* Hamburger section */
+    #hamburger {
+        cursor: pointer;
+        display: block;
+    }
+
+    /* Features section */
+    #features {
+        width: 100%;
+    }
+
+    /* Testimonials section */
+    #testimonials figure {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    /* Bottom section */
+    #bottom {
+        background-image: none;
+    }
+
+    #bottom button {
+        margin: 2em auto;
+    }
+
+    /* Footer section */
+    #social-media {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #social-media img {
+        margin: 2em 0;
+    }
+
+    #copyright-section {
+        flex-direction: column;
+    }
+
+    #copyright-section form {
+        margin-bottom: 1.5em;
+    }
+
+    /* Classes */
+    .footer-links {
+        margin: 2em 0;
+    }
+
+    .footer-links li {
+        margin: 0.7em 0;
+    }
+
+    .flex-item {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
