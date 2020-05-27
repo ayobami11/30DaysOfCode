@@ -1,0 +1,136 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 140, 0);
+    color: rgb(214, 214, 214);
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 99, 71);
+    border-bottom: 3px solid rgb(58, 28, 7);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(91, 117, 91);
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5em 1em;
+}
+
+button:hover {
+    background-color: rgb(143, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+/* Classes */
+.flex-items {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+}
+
+.flex-items h2 {
+    margin: 0.4em 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Specific styles */
+
+/* Game section */
+#game-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+    width: 40%;
+}
+
+#game-section figure {
+    border: 2px solid rgb(59, 61, 57);
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 65px;
+    padding: 1em;
+    text-align: center;
+    width: 32%;
+}
+
+#game-section figcaption {
+    color: rgb(255, 255, 255);
+    margin-top: 0.5em;
+}
+
+#game-section img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Bottom section */
+#bottom-section {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* Result section */
+#result-section {
+    width: 60%;
+}
+
+/* Score section */
+#score-section {
+    width: 30%;
+}
+
+#player-score {
+    color: rgb(0, 128, 0);
+}
+
+#computer-score {
+    color: rgb(255, 0, 0);
+}
+
+/* Button section */
+#btn-section {
+    margin: 1em 0;
+    text-align: center;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 800px) {
+    #game-section,
+    #bottom-section {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    #result-section {
+        width: 50%;
+    }
+
+    #score-section {
+        width: 45%;
+    }
+}
