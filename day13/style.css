@@ -1,0 +1,207 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(180, 52%, 96%);
+    font-family: 'Spartan', sans-serif;
+}
+
+figure {
+    width: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    line-height: 1.5;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Specific styles */
+
+/* Top section */
+#bg-top {
+    background-color: hsl(180, 29%, 50%);
+    background-image: url('./images/bg-header-desktop.svg');
+    height: 10vh;
+}
+
+/* Company section */
+.company {
+    background-color: hsl(0, 0%, 100%);
+    border-left: 2.5px solid hsl(180, 29%, 50%);
+    box-shadow: 2px 4px 5px hsl(180, 28%, 85%), -2px -2px 4px hsl(180, 28%, 85%);
+    justify-content: space-between;
+    margin: 1.5em auto;
+    padding: 1em;
+    width: 85%;
+}
+
+.company figure {
+    margin-right: 1em;
+    min-width: 75px;
+    width: 7%;
+}
+
+.company img {
+    width: 100%;
+}
+
+/* Main section */
+.main-section {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* Company info section */
+.company-info {
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+}
+
+.company-info p {
+    margin-right: 0.7em;
+}
+
+.brand {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+
+.new {
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding: 0.4em;
+    text-transform: uppercase;
+}
+
+.featured {
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding: 0.4em;
+    text-transform: uppercase;
+}
+
+/* Position section */
+.position {
+    font-weight: 700;
+    margin: 0.4em 0;
+}
+
+.position a {
+    color: hsl(180, 14%, 20%);
+}
+
+.position a:active {
+    color: hsl(180, 29%, 50%);
+}
+
+/* Job info section */
+.job-info {
+    color: hsl(180, 8%, 52%);
+    font-size: 0.8rem;
+    justify-content: flex-start;
+}
+
+.job-info p {
+    margin-right: 0.7em;
+}
+
+/* Requirements section */
+.requirements {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 1em;
+}
+
+.requirements a {
+    background-color: hsl(180, 31%, 95%);
+    border-radius: 5px;
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    padding: 0.3em;
+    margin: 0 0.5em;
+}
+
+.requirements a:active {
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Attribution section */
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 13px;
+    }
+
+    .company {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #bg-top {
+        background-image: url('./images/bg-header-mobile.svg');
+    }
+
+    .top-div {
+        flex-basis: 100%;
+    }
+
+    .requirements {
+        justify-content: flex-start;
+        margin-top: 2em;
+    }
+
+    .requirements a {
+        margin: 0.3em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+
+    .company {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .main-section {
+        margin-top: 1em;
+        width: 95%;
+    }
+
+    .company-info p {
+        margin: 0.3em;
+    }
+}
