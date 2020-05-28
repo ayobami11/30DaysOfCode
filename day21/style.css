@@ -1,0 +1,112 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(54, 77%, 75%);
+    font-size: 1.1rem;
+}
+
+header {
+    align-items: center;
+    background-color: rgb(255, 99, 71);
+    border-bottom: 3px solid rgb(36, 110, 68);
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+/* Specific styles */
+#main-container {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#answer-btns {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 13px;
+    margin-top: 1em;
+}
+
+#start-btn {
+    background-color: rgb(55, 143, 55);
+    margin: 1em 0;
+}
+
+#next-btn {
+    background-color: rgb(139, 0, 139);
+    margin: 1em;
+}
+
+/* Classes */
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid rgb(100, 68, 58);
+    min-width: 155px;
+    max-width: 600px;
+    padding: 1em;
+    width: 80%;
+}
+
+.btn {
+    background-color: rgb(219, 76, 40);
+    border: 2px solid rgb(90, 85, 85);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(136, 132, 93), -2px -2px 3px rgb(136, 132, 93);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    padding: 0.3em 0.5em;
+}
+
+.btn.correct {
+    background-color: rgb(0, 128, 0);
+}
+
+.btn.incorrect {
+    background-color: rgb(255, 0, 0);
+}
+
+.controls {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 300px) {
+    body,
+    .btn {
+        font-size: 0.6rem;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+    }
+
+    #answer-btns {
+        grid-gap: 5px;
+    }
+
+    .btn {
+        padding: 0.4em;
+    }
+}
