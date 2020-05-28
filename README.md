@@ -38,6 +38,8 @@ Day 19: https://ayobami11.github.io/30DaysOfCode/day19/
 
 Day 20: https://ayobami11.github.io/30DaysOfCode/day20/
 
+Day 21: https://ayobami11.github.io/30DaysOfCode/day21/
+
 Day 22: https://ayobami11.github.io/30DaysOfCode/day22/
 
 Day 23:  https://ayobami11.github.io/30DaysOfCode/day23/
