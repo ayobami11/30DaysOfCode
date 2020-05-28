@@ -1,0 +1,102 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(222, 184, 135);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    align-items: center;
+    background-color: rgb(116, 233, 0);
+    border-bottom: 2px solid saddlebrown;
+    display: flex;
+    min-width: 260px;
+    justify-content: center;
+    height: 15vh;
+}
+
+/* Classes */
+.timers {
+    color: rgb(255, 166, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Specific styles */
+
+/* Container section */
+#container {
+    align-items: center;
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container > div {
+    background-color: rgb(47, 95, 67);
+    border: 2px solid rgb(139, 0, 0);
+    border-radius: 10px;
+    line-height: 1.5;
+    min-width: 170px;
+    padding: 3em 1em;
+    text-align: center;
+    width: 40%;
+}
+
+#timer-header {
+    margin: 0.5em 0;
+}
+
+#reverse-timer {
+    display: none;
+}
+
+/* Toggle button */
+#toggle-btn {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.5em 0;
+    outline: none;
+    padding: 0.5em;
+}
+
+#toggle-btn:hover {
+    background-color: rgb(139, 0, 0);;
+    color: rgb(255, 255, 255);
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 900px) {
+    #container > div {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 0.5rem;
+    }
+
+    main {
+        font-size: 0.8rem;
+    }
+
+    #container > div {
+        width: 80%;
+    }
+
+    #toggle-btn {
+        font-size: 0.8rem;
+    }
+}
