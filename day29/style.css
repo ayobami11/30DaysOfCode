@@ -271,7 +271,7 @@ button {
     #box-section {
         border: 2px solid rgb(0, 93, 180);
         justify-content: center;
-        height: 200px;
+        height: 130px;
         overflow: scroll;
     }
 
