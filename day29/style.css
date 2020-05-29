@@ -1,0 +1,289 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(7, 23, 51);
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+    padding: 1.2em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    margin-top: 3.7em;
+    height: 85vh;
+}
+
+footer {
+    background-color: rgb(252, 248, 248);
+    border-top: 1px solid rgb(185, 185, 185);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+button {
+    background-color: inherit;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+/* Specific styles */
+
+/* Menu bar */
+#menu-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Hamburger section */
+#hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger-section {
+    display: none;
+    height: 85vh;
+}
+
+#hamburger-section nav {
+    align-items: center;
+    background-color: rgb(40, 53, 86);;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 1.3em;
+}
+
+#hamburger-section li {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.5em 0;
+}
+
+/* Main section */
+#main-section {
+    display: flex;
+    height: 100%;
+}
+
+/* Side bar */
+#side-bar {
+    background-color: rgb(40, 53, 86);
+    min-width: 240px;
+    padding-top: 1.5em;
+    text-align: center;
+    width: 20%;
+}
+
+#side-bar a {
+    display: inline-block;
+    padding: 1.2em;
+    width: 100%;
+}
+
+#side-bar a:hover {
+    background-color: rgb(53, 69, 109);;
+}
+
+#email {
+    color: rgb(128, 128, 128);
+}
+
+/* Main content section */
+#main-content {
+    width: 80%;
+}
+
+/* Top half section */
+#top-half {
+    background-color: rgb(43, 62, 112);
+    display: flex;
+    flex-wrap: wrap;
+    height: 40%;
+}
+
+#top-half button {
+    align-self: flex-start;
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    margin: 0.8em;
+}
+
+#top-half figure {
+    align-self: center;
+    margin: 0 auto;
+    min-width: 100px;
+    width: 13%;
+}
+
+#top-half figcaption {
+    color: rgb(218, 221, 230);
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+#top-half img {
+    background-color: rgb(105, 118, 153);
+    border-radius: 100%;
+    width: 100%;
+}
+
+/* Bottom half section */
+#bottom-half {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    height: 60%;
+}
+
+/* Box section */
+#box-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 80%;
+}
+
+/* Footer section */
+#footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 95%;
+}
+
+/* Copyright section */
+#copyright {
+    min-width: 150px;
+}
+
+/* Footer links */
+#footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 155px;
+    width: 20%;
+}
+
+#footer-links a {
+    color: rgb(0, 93, 180);
+}
+
+/* Classes */
+.scores {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px rgb(223, 221, 221), -2px -2px 4px 1px rgb(223, 221, 221);
+    line-height: 1.7;
+    padding: 1.5em;
+    text-align: center;
+    width: 30%;
+}
+
+
+.track {
+    color: rgb(20, 134, 194);
+    font-size: 1.3rem;
+}
+
+.level {
+    background-color: rgb(20, 134, 194);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 0.7em;
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 13px;
+    }
+
+    #menu-bar button,
+    #side-bar {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #main-content {
+        width: 100%;
+    }
+
+    #box-section {
+      font-size: 0.9rem;  
+    }
+
+    #footer-section {
+        font-size: 0.8rem;
+        width: 98%;
+    }
+
+    .level {
+        padding: 0.3em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #top-half figure {
+        order: 1;
+    }
+
+    #box-section {
+        border: 2px solid rgb(0, 93, 180);
+        justify-content: center;
+        height: 300px;
+        overflow: scroll;
+    }
+
+    .scores {
+        line-height: 1.2;
+        margin: 0.5em;
+        padding: 1em;
+        width: 70%;
+    }
+
+    .track,
+    .level {
+        font-size: 0.85rem;
+    }
+}
