@@ -25,7 +25,7 @@ submitBtn.addEventListener('click', () => {
         // Displays the data
         city.innerHTML = cityValue;
         country.innerHTML = countryValue;
-        temp.innerHTML = `Temperature: ${tempValue}&#8451;`;
+        temp.innerHTML = `Temperature: ${tempValue}&#8457`;
         humidity.innerHTML = `Humidity: ${humidityValue}%`;
         pressure.innerHTML = `Pressure: ${pressureValue} Pa`;
         description.innerHTML = `Description: ${descriptionValue}`;
