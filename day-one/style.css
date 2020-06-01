@@ -1,0 +1,83 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(141, 90, 31);
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+header {
+    background-color: rgb(165, 42, 42);
+    border-bottom: 3px solid rgb(184, 134, 11);
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+figure {
+    margin-left: 10px;
+    min-width: 150px;
+    text-align: center;
+    width: 15%;
+}
+
+img {
+    border-radius: 30px;
+    width: 100%;
+}
+
+/* Specific styles */
+
+/* Main section */
+#main-section {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#main-section div {
+    width: 70%;
+}
+
+#main-section p {
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    text-indent: 30px;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 12px;
+    }
+
+    figure {
+        margin: 1em auto;
+        flex-basis: 100% 1 1;
+        order: -1;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    #main-section div {
+        width: 100%;
+    }
+}
