@@ -17,6 +17,7 @@ let computerScore = document.getElementById('computer-score');
 // Restart button
 let restartBtn = document.getElementById('restart-btn');
 restartBtn.addEventListener('click', () => {
+  result.innerHTML = '';
   playerTally = 0;
   playerScore.innerHTML = `Player: ${playerTally}`;
   computerTally = 0;
