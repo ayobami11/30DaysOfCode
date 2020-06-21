@@ -73,7 +73,6 @@ button:hover {
 }
 
 .task {
-    border: 1px solid red;
     background-color: inherit;
     color: rgb(243, 148, 65);
     font-size: 1.3rem;
