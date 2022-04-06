@@ -1,7 +1,8 @@
 /**
+ * Accepts a variable number of number inputs and returns their sum.
  *
- * @param {array} array an array of numbers
- * @returns the sum of the numbers in the array
+ * @param {Array} array an array of numbers
+ * @returns {Number} the sum of the numbers in the array
  */
 const sumOfArray = array => {
     if (!Array.isArray(array) || array.length === 0) {
