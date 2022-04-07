@@ -7,9 +7,7 @@ const fizzBuzzArrays = numbers => {
     // checks if all elements in the array are numbers
     if (
         // isFinite also handles NaN values as NaN is not finite
-        !numbers.every(
-            number => typeof Number(number) === 'number' && isFinite(number)
-        )
+        !numbers.every(number => typeof number === 'number' && isFinite(number))
     ) {
         return 'Please provide an array containing only positive integers.';
     }
@@ -47,7 +45,6 @@ const fizzBuzzArrays = numbers => {
     return nestedFizzBuzzArray;
 };
 
-console.log(fizzBuzzArrays([23, 15, 'NaN']));
 console.log(fizzBuzzArrays([4, 34, NaN]));
 console.log(fizzBuzzArrays([12, 22, Infinity]));
 // forEach ignores "holes" in sparse arrays
