@@ -30,4 +30,4 @@ const fizzBuzz = n => {
 
 console.log(fizzBuzz(100));
 console.log(fizzBuzz(384));
-console.log(fizzBuzz());
+console.log(fizzBuzz(1));
