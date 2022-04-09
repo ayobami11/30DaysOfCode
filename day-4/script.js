@@ -1,22 +1,29 @@
 /**
- * 
+ *
  * @param {Array} array an array of objects where each object contains three properties with keys: name, age, and level
  * @returns {Array} an array of strings where each string is a concatenated form of all the object values separated by a '/'
  */
 const objectValuesToString = array => {
+    // short circuit evaluation
+    const isInputValid =
+        Array.isArray(array) &&
+        array.every(element => typeof element === 'object' && element !== null);
+
+    if (!isInputValid) return 'Please provide an array of objects.';
+
     const objectKeys = array.map(object => Object.keys(object));
 
     /**
      * Checks the validity of each object in the array by first ensuring all the objects have 3 properties using the object keys.
      * It then iterates through each of the object keys to ensure the 3 keys are 'name', 'age' and 'level'.
      */
-    const isInputValid = objectKeys.every(
+    const areObjectsValid = objectKeys.every(
         keys =>
             keys.length === 3 &&
             keys.every(key => ['name', 'age', 'level'].includes(key))
     );
 
-    if (!isInputValid) {
+    if (!areObjectsValid) {
         return 'Please provide valid properties: name, age, and level, for each object.';
     }
 
@@ -61,3 +68,4 @@ console.log(
         { name: 'Yo', age: 32, level: '200 level' }
     ])
 );
+console.log(objectValuesToString('yooo'));
