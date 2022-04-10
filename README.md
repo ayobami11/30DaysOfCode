@@ -5,3 +5,4 @@
 - [Day 3](https://github.com/ayobami11/30DaysOfCode/blob/main/day-3/script.js)
 - [Day 4](https://replit.com/@ayobami11/ObjectValuesToString#index.js)
 - [Day 5](https://replit.com/@ayobami11/StringToObjectEntries#index.js)
+- [Day 6](https://replit.com/@ayobami11/SumToTarget#index.js)
