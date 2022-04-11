@@ -6,3 +6,4 @@
 - [Day 4](https://replit.com/@ayobami11/ObjectValuesToString#index.js)
 - [Day 5](https://replit.com/@ayobami11/StringToObjectEntries#index.js)
 - [Day 6](https://replit.com/@ayobami11/SumToTarget#index.js)
+- [Day 7](https://replit.com/@ayobami11/SortNumbersAsc#index.js)
