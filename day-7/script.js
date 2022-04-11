@@ -11,14 +11,19 @@ const sortNumberAsc = numbers => {
 
     if (!areNumbersFinite) return 'Please provide an array of finite numbers.';
 
-    const sortedNumbers = [];
+    // copies 'numbers' array parameter so as to avoid modifying it
+    let unsortedNumbers = [...numbers];
 
-    while (numbers.length > 0) {
-        const lowestNumber = Math.min(...numbers);
+    let sortedNumbers = [];
 
-        sortedNumbers.push(lowestNumber);
+    while (unsortedNumbers.length > 0) {
+        const lowestNumber = Math.min(...unsortedNumbers);
 
-        numbers = numbers.filter(number => number !== lowestNumber);
+        sortedNumbers = [...sortedNumbers, lowestNumber];
+
+        unsortedNumbers = unsortedNumbers.filter(
+            number => number !== lowestNumber
+        );
     }
 
     return sortedNumbers;
