@@ -7,3 +7,4 @@
 - [Day 5](https://replit.com/@ayobami11/StringToObjectEntries#index.js)
 - [Day 6](https://replit.com/@ayobami11/SumToTarget#index.js)
 - [Day 7](https://replit.com/@ayobami11/SortNumbersAsc#index.js)
+- [Day 8](https://replit.com/@ayobami11/TestPalindromes#index.js)
