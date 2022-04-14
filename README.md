@@ -9,3 +9,4 @@
 - [Day 7](https://replit.com/@ayobami11/SortNumbersAsc#index.js)
 - [Day 8](https://replit.com/@ayobami11/TestPalindromes#index.js)
 - [Day 9](https://replit.com/@ayobami11/CreatePascalTriangle#index.js)
+- [Day 10](https://replit.com/@ayobami11/MergeSortedArrays#index.js)
