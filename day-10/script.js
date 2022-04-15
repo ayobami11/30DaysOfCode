@@ -15,10 +15,18 @@ const mergeSortedArrays = (arr1, arr2) => {
     if (!areArraysValid)
         return 'Please provide two arrays containing valid numbers only.';
 
-    let sortedArr = [];
+    const sortedArr = [];
 
-    let i = 0;
-    let j = 0;
+    let i = 0; // iteration variable for arr1
+    let j = 0; // iteration variable for arr2
+
+    /**
+     * On each iteration of the while loop:
+     * Starting at index 0, the elements of the 2 arrays are compared and then the element with the smaller value is pushed to the sortedArr array.
+     * The index of the element just pushed is then incremented (using the corresponding iteration variable of the array) and then the 
+     * elements from the 2 arrays are compared again until one of the arrays is exhausted.
+     * Once this happens, the remaining elements, if any, in the unexhausted array is then pushed to the sortedArr array.
+     */
 
     while (sortedArr.length < arr1.length + arr2.length) {
         if (i === arr1.length) {
@@ -29,9 +37,15 @@ const mergeSortedArrays = (arr1, arr2) => {
             sortedArr.push(arr1[i] <= arr2[j] ? arr1[i++] : arr2[j++]);
         }
     }
+
     return sortedArr;
 };
 
+console.log(mergeSortedArrays([1, 4, 7, 8], [2, 3, 4]));
+console.log(mergeSortedArrays([], [2, 4, 9]));
+console.log(mergeSortedArrays([1, 2, 7, 8], [2, 5, 9, 14]));
+
+console.log(mergeSortedArrays([1, 2, 5], [3, 4, 6]));
 console.log(
     mergeSortedArrays(
         [0.2, 0.5, 1.3, 2.4, 5.5, 8.9, 11.52, 22.3, 24, 25, 26.5, 34, 67],
