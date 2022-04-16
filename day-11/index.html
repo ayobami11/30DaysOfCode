@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <meta name="author" description="Ayobami Tunwase" />
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+
+        <title>
+            30DaysOfCode | Day 11 | Frontend Mentor | Interactive rating
+            component
+        </title>
+
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <!-- Rating state start -->
+            <dialog id="dialog">
+                <img
+                    class="star-icon"
+                    src="./images/icon-star.svg"
+                    alt="Star icon"
+                />
+                <h2>How did we do?</h2>
+                <p>
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
+                <form id="ratings-form" method="dialog">
+                    <fieldset>
+                        <input
+                            class="rating-input"
+                            type="radio"
+                            name="rating"
+                            id="rating-1"
+                            value="1"
+                            required
+                        />
+                        <label for="rating-1">1</label>
+                        <input
+                            class="rating-input"
+                            type="radio"
+                            name="rating"
+                            id="rating-2"
+                            value="2"
+                        />
+                        <label for="rating-2">2</label>
+                        <input
+                            class="rating-input"
+                            type="radio"
+                            name="rating"
+                            id="rating-3"
+                            value="3"
+                        />
+                        <label for="rating-3">3</label>
+                        <input
+                            class="rating-input"
+                            type="radio"
+                            name="rating"
+                            id="rating-4"
+                            value="4"
+                        />
+                        <label for="rating-4">4</label>
+                        <input
+                            class="rating-input"
+                            type="radio"
+                            name="rating"
+                            id="rating-5"
+                            value="5"
+                        />
+                        <label for="rating-5">5</label>
+                    </fieldset>
+
+                    <button id="submit-btn" type="submit">Submit</button>
+                </form>
+            </dialog>
+
+            <!-- Rating state end -->
+
+            <!-- Thank you state start -->
+
+            <section id="section" class="hide">
+                <img src="./images/illustration-thank-you.svg" />
+
+                <p class="user-rating">
+                    You selected
+                    <!-- Add rating here -->
+                    <output id="output" form="ratings-form"></output>
+                    out of 5
+                </p>
+                <h2>Thank you!</h2>
+                <p>
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don't hesitate to get in touch!
+                </p>
+            </section>
+
+            <!-- Thank you state end -->
+        </main>
+
+        <footer class="attribution">
+            <p>
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a href="https://www.github.com/ayobami11" target="_blank"
+                    >Ayobami Tunwase</a
+                >.
+            </p>
+        </footer>
+    </body>
+</html>

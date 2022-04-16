@@ -1,0 +1,203 @@
+:root {
+    /* Colors */
+
+    /* Primary */
+    --orange: hsl(25, 97%, 53%);
+    /* alpha value - 10% */
+    --orange-a-10: hsla(25, 97%, 53%, 0.1);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+
+    --light-grey: hsl(217, 12%, 63%);
+    /* alpha value - 10% */
+    --light-grey-a-10: hsla(217, 12%, 63%, 0.1);
+
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --light-blue: hsl(228, 45%, 44%);
+
+    /* Font */
+
+    /* Family */
+    --font-family: 'Overpass', sans-serif;
+
+    /* Weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--very-dark-blue);
+    color: var(--light-grey);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog,
+section {
+    background: var(--dark-blue);
+    color: var(--light-grey);
+
+    border-radius: 1em;
+    padding: 2em;
+    height: fit-content;
+    width: 85%;
+    max-width: 400px;
+
+    line-height: 1.5;
+}
+
+dialog {
+    border: none;
+    /* centers horizontally and vertically (for some reason it is not affected by the flex parent) */
+    margin: auto;
+}
+
+section {
+    text-align: center;
+}
+
+p {
+    font-size: calc(15 / 16 * 1rem); /* 15px */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+section img {
+    /* centers img horizontally */
+    margin: 1.5em auto;
+}
+
+.star-icon {
+    background: var(--light-grey-a-10);
+
+    border-radius: 50%;
+    padding: 0.75em;
+}
+
+h2 {
+    color: var(--white);
+    margin: 0.5em 0;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    border: none;
+    margin: 1.5em 0;
+}
+
+/* when the fieldset flex items wrap into a single row */
+@media (min-width: 367px) {
+    fieldset {
+        justify-content: space-between;
+    }
+}
+
+input[type='radio'] {
+    position: absolute;
+
+    /* keeping the radio input checkmarks out of sight, but still accessible to screen readers */
+    top: -9999px;
+    left: -9999px;
+}
+
+input[type='radio']:hover + label {
+    background: var(--medium-grey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+input[type='radio']:checked + label {
+    background: var(--orange);
+    color: var(--white);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: var(--font-weight-bold);
+    background: var(--light-grey-a-10);
+
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 1.25em;
+
+    display: block;
+    padding: 0.75em;
+    width: 100%;
+
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+button:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+footer {
+    background: var(--dark-blue);
+    padding: 1em;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--light-blue);
+}
+
+footer a:hover {
+    color: var(--orange);
+}
+
+.user-rating {
+    background: var(--orange-a-10);
+    color: var(--orange);
+
+    margin: 1.5em auto;
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+    width: fit-content;
+}
+
+.hide {
+    display: none;
+}
