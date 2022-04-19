@@ -12,3 +12,4 @@
 - [Day 10](https://replit.com/@ayobami11/MergeSortedArrays#index.js)
 - [Days 11-12](https://ayobami11.github.io/30DaysOfCode/day-11)
 - [Days 13-14](https://ayobami11.github.io/30DaysOfCode/day-13)
+- [Days 15-16](https://ayobami11.github.io/30DaysOfCode/day-15)
