@@ -114,13 +114,6 @@ fieldset {
     margin: 1.5em 0;
 }
 
-/* when the fieldset flex items wrap into a single row */
-@media (min-width: 367px) {
-    fieldset {
-        justify-content: space-between;
-    }
-}
-
 input[type='radio'] {
     position: absolute;
 
@@ -202,4 +195,11 @@ footer a:hover {
 
 .hide {
     display: none;
+}
+
+/* when the fieldset flex items wrap into a single row */
+@media (min-width: 367px) {
+    fieldset {
+        justify-content: space-between;
+    }
 }

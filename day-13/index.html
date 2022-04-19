@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <meta name="author" content="Ayobami Tunwase" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./styles.css" />
+
+        <title>
+            30DaysOfCode | Day 13 | Frontend Mentor | Interactive pricing
+            component
+        </title>
+
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Simple, traffic-based pricing</h1>
+                <p>Sign-up for our 30-day trial.</p>
+                <p>No credit card required.</p>
+            </div>
+        </header>
+        <main>
+            <section class="pricing-section">
+                <div class="section-top">
+                    <div>
+                        <h2>
+                            <small>
+                                <output id="page-views" for="price-input"
+                                    >100k</output
+                                >
+                                Pageviews
+                            </small>
+                        </h2>
+                        <input
+                            type="range"
+                            name="price"
+                            id="price-input"
+                            class="price-input"
+                            min="0"
+                            max="4"
+                            value="2"
+                        />
+                        <label class="price-label" for="price-input">
+                            <span class="price">
+                                $<output id="price-output" for="price-input"
+                                    >16</output
+                                >.00
+                            </span>
+                            / month
+                        </label>
+                    </div>
+                    <label class="billing-label">
+                        <input
+                            type="checkbox"
+                            class="toggle-checkbox"
+                            name="billing"
+                            id="billing-type"
+                        />
+                        <span>Monthly Billing</span>
+                        <label class="toggle-switch" for="billing-type"></label>
+                        <span>
+                            Yearly Billing
+                            <span class="discount">-25%</span>
+                        </span>
+                    </label>
+                </div>
+                <hr />
+                <div class="section-bottom">
+                    <ul>
+                        <li>Unlimited websites</li>
+                        <li>100% data ownership</li>
+                        <li>Email reports</li>
+                    </ul>
+                    <a class="cta-link" href="#">Start my trial</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.github.com/ayobami11" target="_blank"
+                >Ayobami Tunwase</a
+            >.
+        </footer>
+    </body>
+</html>
