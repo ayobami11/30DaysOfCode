@@ -52,7 +52,7 @@ article {
     box-shadow: 4px 15px 20px hsla(224, 23%, 55%, 0.5);
     line-height: 1.5;
     max-width: 400px;
-    width: 90%;
+    width: 85%;
 }
 
 img {
@@ -116,10 +116,6 @@ h2 {
 .order-text a:hover {
     color: hsl(245, 90%, 63%);
     text-decoration: none;
-}
-
-menu {
-    list-style: none;
 }
 
 button {
