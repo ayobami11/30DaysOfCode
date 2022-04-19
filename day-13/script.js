@@ -1,6 +1,7 @@
 const priceRangeInput = document.getElementById('price-input');
 const pageViewsOutput = document.getElementById('page-views');
-const priceRangeOutput = document.getElementById('price-output');
+// used class instead of id to avoid conflicting id and for attributes
+const priceRangeOutput = [...document.getElementsByClassName('price-output')][0];
 const billingTypeCheckbox = document.getElementById('billing-type');
 
 const pricing = [
