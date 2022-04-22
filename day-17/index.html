@@ -11,6 +11,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
 
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/a21dc2a35f.js" crossorigin="anonymous"></script>
+
         <link
             rel="icon"
             type="image/png"
@@ -27,13 +30,23 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
+        <header>
+            <div class="switch-container">
+                <input class="mode-input" type="checkbox" name="mode" id="mode-input">
+                <label class="light-label" for="mode-input">Light</label>
+                <label class="mode-label" for="mode-input">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="ball"></span>
+                </label>
+                <label class="dark-label" for="mode-input">Dark</label>
+            </div>
+        </header>
         <main>
             <article>
-                <header>
                   <h1>
                       <small id="quote-id"><!-- Advice ID goes here --></small>
-                  </h1>
-                </header>                                                                                                                                                                                                                                                                                                                                                                                                             </header>
+                  </h1>                                                                                                                                                                                                                                                                                                                                                                                                        </header>
                 <blockquote id="quote" class="hide"><!-- Advice text goes here --></blockquote>
                   <picture>
                     <source media="(min-width:400px)" srcset="./images/pattern-divider-desktop.svg" type="image/svg+xml">

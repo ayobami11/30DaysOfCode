@@ -26,9 +26,113 @@ body {
     color: var(--light-cyan);
     font-family: var(--font-family);
     min-height: 100vh;
-    
+
     display: flex;
     flex-direction: column;
+}
+
+header {
+    margin: 1.5em auto;
+    width: 90%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Toggle switch styles */
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.mode-input {
+    display: none;
+}
+
+.mode-input:checked ~ .mode-label {
+    background: hsl(0, 0%, 75%);
+}
+
+.light-label,
+.dark-label {
+    cursor: pointer;
+}
+
+.mode-input:not(:checked) ~ .light-label,
+.mode-input:checked ~ .dark-label {
+    color: var(--neon-green);
+    font-weight: var(--font-weight-bold);
+}
+
+.mode-input:checked ~ .mode-label .fa-sun {
+    transform: translateX(43px) rotate(160deg);
+}
+
+.mode-input:checked ~ .mode-label .fa-moon {
+    transform: translateX(-43px) rotate(0);
+}
+
+.mode-input:checked ~ .mode-label .ball {
+    transform: translate(40px);
+    background: hsl(0, 0%, 13%);
+}
+
+.mode-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+
+    width: 75px;
+    height: 35px;
+    padding: 0 0.5em;
+    background: var(--dark-blue);
+    border-radius: 3em;
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-sun,
+.fa-moon {
+    font-size: calc(18 / 16 * 1rem);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.fa-sun {
+    color: hsl(51, 100%, 50%);
+    transform: translateX(43px) rotate(250deg);
+}
+
+.fa-moon {
+    color: hsl(0, 0%, 100%);
+    transform: translateX(0) rotate(250deg);
+    /* hides moon icon initially */
+    opacity: 0;
+}
+
+.fa-moon,
+.mode-input:checked ~ .mode-label .fa-sun {
+    opacity: 0;
+}
+
+.fa-sun,
+.mode-input:checked ~ .mode-label .fa-moon {
+    opacity: 1;
+}
+
+.ball {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+
+    background: hsl(0, 0%, 100%);
+    transition: 0.3s;
 }
 
 main {
@@ -41,7 +145,7 @@ main {
 
 article {
     background: var(--dark-grayish-blue);
-    border-radius: .75em;
+    border-radius: 0.75em;
     font-weight: var(--font-weight-bold);
     max-width: 500px;
     padding: 1.5em;
@@ -60,14 +164,14 @@ img {
 h1 {
     color: var(--neon-green);
     font-size: 1rem;
-    letter-spacing: .3em;
+    letter-spacing: 0.3em;
     margin: 1em 0;
     text-transform: uppercase;
 }
 
 blockquote {
     font-size: calc(28 / 16 * 1rem); /* 28px */
-    quotes: '\201C' '\201D';
+    quotes: '\201C''\201D';
     line-height: 1.5;
     margin: 1em;
 }
@@ -91,7 +195,7 @@ button {
     border-radius: 50%;
     cursor: pointer;
     padding: 1em;
-    
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -99,7 +203,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0 25px 15px hsla(150, 100%, 66%, .25);
+    box-shadow: 0 0 25px 15px hsla(150, 100%, 66%, 0.25);
     filter: brightness(125%);
 }
 
@@ -128,4 +232,38 @@ footer a {
     overflow: hidden;
     padding: 0;
     position: absolute;
+}
+
+/* Light mode styles */
+.light-mode {
+    /* background: hsl(217, 10%, 95%); */
+    background: hsl(150, 100%, 95%);
+    color: var(--grayish-blue);
+}
+
+.light-mode .mode-input:not(:checked) ~ .light-label,
+.light-mode .mode-input:checked ~ .dark-label {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-weight-bold);
+}
+
+.light-mode article {
+    background: hsl(0, 0%, 100%);
+    box-shadow: 4px 15px 20px hsla(224, 23%, 80%, 0.5);
+}
+
+.light-mode h1 {
+    color: hsl(150, 100%, 25%);
+}
+
+.light-mode button {
+    filter: brightness(75%);
+}
+
+.light-mode footer {
+    background: inherit;
+}
+
+.light-mode footer a {
+    color: hsl(150, 100%, 25%);
 }

@@ -2,6 +2,24 @@ const quoteId = document.getElementById('quote-id');
 const quote = document.getElementById('quote');
 const quoteBtn = document.getElementById('quote-btn');
 
+const modeInput = document.getElementById('mode-input');
+
+// immediately invoked function: detects the user's preferred mode (light or dark)
+(function detectPreferredMode() {
+    if (
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+        modeInput.checked = true;
+    } else {
+        body.classList.add('light-mode');
+    }
+})();
+
+const handleThemeChange = () => document.body.classList.toggle('light-mode');
+
+modeInput.addEventListener('change', handleThemeChange);
+
 // Makes a get request to an API and attaches the result to the DOM, each time the button is clicked.
 const getAdviceData = async () => {
     const endpoint = 'https://api.adviceslip.com/advice';
@@ -22,8 +40,9 @@ const getAdviceData = async () => {
         } else {
             throw new Error('Invalid response.');
         }
-    } catch (error) {
-        quote.innerHTML = 'Something went wrong. Please try again.';
+    } catch {
+        quote.innerHTML =
+            'Something went wrong. Please try again. <em>Get it?!</em>';
     } finally {
         quote.classList.remove('hide');
     }
