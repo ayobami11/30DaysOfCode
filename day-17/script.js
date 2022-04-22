@@ -32,4 +32,7 @@ const getAdviceData = async () => {
 // fetches initial data on pageload
 getAdviceData();
 
+// fetches new advice every 10 seconds
+setInterval(getAdviceData, 10000);
+
 quoteBtn.addEventListener('click', getAdviceData);
