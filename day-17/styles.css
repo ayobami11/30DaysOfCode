@@ -6,7 +6,7 @@
     --neon-green: hsl(150, 100%, 66%);
 
     /* Neutral */
-    --grayish-blue: hsl(217, 19%, 38%);
+    --grayish-blue: hsl(216, 19%, 38%); /* Used in pattern-divider svg files */
     --dark-grayish-blue: hsl(217, 19%, 24%);
     --dark-blue: hsl(218, 23%, 16%);
 
@@ -116,4 +116,16 @@ footer a {
 
 .hide {
     display: none;
+}
+
+/* For screen readers */
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
 }
