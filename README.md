@@ -17,3 +17,6 @@
 - Days 21-25
     - [Repo link](https://github.com/ayobami11/calculator)
     - [Live site](https://ayo-calc.netlify.app)
+- Days 26-30
+    - [Repo link](https://github.com/ayobami11/url-shortener)
+    - [Live site](https://url-shrtener.netlify.app)
